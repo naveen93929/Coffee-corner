@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>COFFEE SHOP WEBSITE</title>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+         
+        <link rel="stylesheet" href="./css/style.css">
+
+
+        
+
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">
+                <img src="./images/logo.jpeg" alt="coffee shop logo">
+                <h3>coffee corner</h3>
+               </a> 
+            <nav>
+               <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Menu">Menu</a></li> 
+                <li><a href="#Reviews">Reviews</a></li>  
+                <li><a href="#Contact">Contact</a></li>
+
+               </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="Home" class="hero-container">
+              <video class="hero-video" autoplay loop muted>
+                <source src="./images/bg video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              
+              
+                <div class="hero-text">
+                    <h1>Welcome to Coffee Corner</h1>
+                    <p>Where every sip feels like home</p>
+                    
+                </div>
+            </section>
+
+
+            <section id="About" class="about">
+             
+                <h2>About Us</h2>
+                <div class="boxes">
+                  <div class="box">
+                    <h3>Our Story</h3>
+                    <p>Founded in 2009 with passion for coffee and community.</p>
+                  </div>
+                  <div class="box">
+                    <h3>Our Mission</h3>
+                    <p>Serving quality coffee while nurturing warm relationships.</p>
+                  </div>
+                  <div class="box">
+                    <h3>Our Community</h3>
+                    <p>Hosting events, supporting local artists, and fostering friendships.</p>
+                  </div>
+                </div>
+                <button class="button">Read More</button>
+              </section>
+
+              <section id="Menu" class="menu-section">
+                <h2>Our Menu</h2>
+                <div class="menu-categories">
+                  <div class="menu-category">
+                    <img src="./images/image-1.png" alt="Coffee">
+                    <h2>Coffee</h2>
+                    <button class="category-btn" data-category="coffee">View Menu</button>
+                  </div>
+                  <div class="menu-category">
+                    <img src="./images/tea.jpg" alt="Tea">
+                    <h2>Tea</h2>
+                    <button class="category-btn" data-category="tea">View Menu</button>
+                  </div>
+                  <div class="menu-category">
+                    <img src="./images/smoothies.webp" alt="Smoothies">
+                    <h2>Smoothies</h2>
+                    <button class="category-btn" data-category="smoothies">View Menu</button>
+                  </div>
+                </div>
+              
+                <!-- Modal window -->
+                <div class="modal" style="display: none;">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2 class="modal-title"></h2>
+                    <div class="modal-menu-list"></div>
+                  </div>
+                </div>
+              </section>
+
+              <section id="Reviews" class="review-section">
+                <h2>What Our Customers Say</h2>
+                <div class="testimonial-container">
+                  <div class="testimonial-card">
+                    <img src="./images/customer image1.jpeg" alt="Customer 1">
+                    <p>"Great coffee and friendly staff!"</p>
+                    <span>Emily R.</span>
+                  </div>
+                  <div class="testimonial-card">
+                    <img src="./images/customer image2.jpeg" alt="Customer 2">
+                    <p>"Love the atmosphere and coffee selection!"</p>
+                    <span>David K.</span>
+                  </div>
+                  <div class="testimonial-card">
+                    <img src="./images/customer image3.jpeg" alt="Customer 3">
+                    <p>"Best coffee shop in town!"</p>
+                    <span>Sarah K.</span>
+                  </div>
+                </div>
+                <div class="rating-container">
+                  <h3>Ratings and Reviews</h3>
+                  <p>4.5/5 stars (based on 100 reviews)</p>
+                  <button>Read full reviews</button>
+                </div>
+                <div class="full-reviews-section">
+                  <h3>Full Reviews</h3>
+                  <div class="review-list">
+                    <div class="review-item">
+                      <h4>Emily R.</h4>
+                      <p>"Great coffee and friendly staff!"</p>
+                      <span>5/5 stars</span>
+                    </div>
+                    <div class="review-item">
+                      <h4>David K.</h4>
+                      <p>"Love the atmosphere and coffee selection!"</p>
+                      <span>4.5/5 stars</span>
+                    </div>
+                    <div class="review-item">
+                      <h4>Sarah K.</h4>
+                      <p>"Best coffee shop in town!"</p>
+                      <span>5/5 stars</span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+
+
+              <section id="Contact" class="contact-section">
+                <h2>Get in Touch</h2>
+                  <div class="contact-info">
+                   <p>Address: 123 Main St, Anytown, USA</p>
+                   <p>Phone: 555-555-5555</p>
+                   <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+                  </div>
+                <div class="contact-form">
+                  <form id="contact-form">
+                    <input type="text" id="name" placeholder="Name">
+                    <input type="email" id="email" placeholder="Email">
+                    <textarea id="message" placeholder="Message"></textarea>
+                    <button id="send-button">Send Message</button>
+                  </form>
+                <div class="notification" id="notification"></div>
+                </div>
+              </section>
+
+              
+12<footer class="footer-section">
+  <div class="container">
+    <div class="footer-row">
+      <div class="footer-col">
+        <h4>Stay Connected</h4>
+        <ul class="social-icons">
+          <li><a href="http://www.instagram.com" class="fab fa-instagram"></a></li>
+          <li><a href="http://www.twitter.com" class="fab fa-twitter"></a></li>
+          <li><a href="http://www.linkedin.com/in/galla-venkata-naveen/" class="fab fa-linkedin"></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>Stay up-to-date with our latest news and updates!</p>
+        <form>
+          <input type="email" placeholder="Enter your email">
+          <button class="btn-subscribe">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+  </div>
+</footer>
+
+    </main>
+      <script src="./js/script.js"></script>
+    </body>
+</html>
